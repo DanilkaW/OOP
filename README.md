@@ -57,8 +57,8 @@ fun TagConsumer<HTMLElement>.input(
  >**После нажатия на кнопку, отвечающую за синий цвет**
  ![Рисунок 2](https://sun9-49.userapi.com/c206824/v206824985/135555/7LBqXw4Thw8.jpg)
  
- >**За зеленый цвет**
+ За зеленый цвет
  ![Рисунок 3](https://sun9-65.userapi.com/c206824/v206824985/13555c/V007zuYl-vc.jpg)
  
- >**За красный цвет**
+ За красный цвет
  ![Рисунок 4](https://sun9-19.userapi.com/c206824/v206824985/135563/0cqOoNjbPTs.jpg)
