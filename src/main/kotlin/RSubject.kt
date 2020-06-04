@@ -1,15 +1,16 @@
 import data.Student
-import data.Subject
+//import data.Subject
 import data.StudentList
-import data.SubjectList
+//import data.SubjectList
 import org.w3c.dom.events.Event
 import react.*
 import react.dom.h1
 import react.dom.li
 import react.dom.ol
+import react.dom.h2
 
 interface RSubjectProps : RProps {
-    var subject: Array<Subject>
+    var subject: String
     var listStudent :Array<Student>
 
 }
@@ -29,12 +30,11 @@ class RSubject : RComponent<RSubjectProps, RSubjectState>() {
     fun RBuilder.onIndex(): (Int) -> (Event) -> Unit = {
         onClick(it)
     }
-    override fun RBuilder.render() { // Формируем предмет и список студентов к нему
-        props.subject.map {
-            + it.name
-            ol {
-                rstudentlist(props.listStudent, state.present, onIndex())
-            }
+
+    override fun RBuilder.render() {
+        +props.subject
+                ol {
+            rstudentlist(props.listStudent, state.present, onIndex())
         }
     }
 
@@ -47,9 +47,9 @@ class RSubject : RComponent<RSubjectProps, RSubjectState>() {
 
 
 
-fun RBuilder.rsubject(subject:  ArrayList<Subject> ) =
+fun RBuilder.rsubject() =
     child(RSubject::class)
     {
-        attrs.subject = subject.toTypedArray()
+        attrs.subject = "Технология обработки информации"
         attrs.listStudent = StudentList.toTypedArray()
     }
