@@ -1,5 +1,5 @@
 import data.StudentList
-import data.SubjectList
+//import data.SubjectList
 import react.dom.h1
 import react.dom.li
 import react.dom.ol
@@ -12,6 +12,7 @@ fun main() {
         h1 {
             +"Список студентов и учебных предметов"
         }
-        rsubject(SubjectList)
+        //rsubject(SubjectList)
+        rsubject()
     }
 }
